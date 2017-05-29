@@ -1,0 +1,36 @@
+.page,
+.error-404 {
+	.page-header {
+		background-color: $light-bg-color;
+		padding: 4rem $padding-small;
+		text-align: center;
+
+		@include respond-to("small-up") {
+			padding-right: $padding-medium;
+			padding-left: $padding-medium;
+		}
+		@include respond-to("medium-up") {
+			padding-right: $padding-large;
+			padding-left: $padding-large;
+		}
+
+		.page-title {
+			margin-bottom: 0;
+		}
+	}
+
+	.page-content {
+		background-color: $light-bg-color;
+
+		padding: 0 $padding-small 4rem;
+
+		@include respond-to("small-up") {
+			padding-right: $padding-medium;
+			padding-left: $padding-medium;
+		}
+		@include respond-to("medium-up") {
+			padding-right: $padding-large;
+			padding-left: $padding-large;
+		}
+	}
+}

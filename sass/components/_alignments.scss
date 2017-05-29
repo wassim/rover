@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------------------
+ * - Alignements
+ */
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 2rem;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 2rem;
+}
+
+.aligncenter {
+	display: block;
+	clear: both;
+}

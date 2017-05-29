@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+ * - Buttons
+ */
+
+.btn,
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	height: 4rem;
+	padding: .7rem 2.5rem;
+	cursor: pointer;
+  user-select: none;
+	transition: all ease-in-out .1s;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+	letter-spacing: 0.2rem;
+  text-transform: uppercase;
+	color: #fff;
+	border: 0;
+	border-radius: 0;
+	background-color: $dark-color;
+	font-family: $heading-font-family;
+  font-size: 1.2rem;
+	font-weight: bold;
+	appearance: none;
+
+	&:hover {
+		color: #fff;
+		background-color: $dark-gray-color;
+	}
+
+	&:active {
+	}
+
+	&[disabled],
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+    opacity: .5;
+  }
+}

@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+ * - Codes
+ */
+
+code {
+  background: $bg-color;
+  color: $code-color;
+  //.label-base();
+}
+
+.code {
+  border-radius: $border-radius;
+  color: $dark-gray-color;
+  line-height: 2rem;
+  position: relative;
+
+  &::before {
+    content: attr(data-lang);
+    color: $light-gray-color;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    top: .2rem;
+  }
+
+  code {
+    color: inherit;
+    display: block;
+    line-height: inherit;
+    overflow-x: auto;
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+pre {
+	background-color: $bg-color;
+  clear: both;
+	display: block;
+	font-size: 1.2rem;
+  overflow: auto;
+  padding: 2rem;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}

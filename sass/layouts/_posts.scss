@@ -1,0 +1,246 @@
+/*------------------------------------------------------------------------------
+ * - Posts Styling
+ */
+
+.hentry {
+	position: relative;
+	margin-bottom: 6rem;
+	padding-bottom: 4rem;
+	background-color: $light-bg-color;
+
+	.entry-thumbnail {
+		a {
+			img {
+				transition: opacity ease-in-out .15s;
+			}
+
+			&:hover {
+				img {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+
+	.entry-header {
+		padding: 4rem $padding-small;
+		text-align: center;
+
+		@include respond-to("small-up") {
+			padding-right: $padding-medium;
+			padding-left: $padding-medium;
+		}
+		@include respond-to("medium-up") {
+			padding-right: $padding-large;
+			padding-left: $padding-large;
+		}
+
+		.entry-meta {
+			margin-bottom: 1.5rem;
+			letter-spacing: 0.2rem;
+			text-transform: uppercase;
+			color: $gray-color;
+			font-family: $heading-font-family;
+			font-size: 1.2rem;
+
+			.updated {
+				@extend .visually-hidden;
+			}
+
+			a {
+				color: $gray-color;
+			}
+		}
+
+		.entry-title {
+			margin-bottom: 0;
+			text-transform: uppercase;
+			color: $dark-color;
+			font-size: 2.6rem;
+
+			a {
+				color: $dark-color;
+
+				&:hover {
+					color: $gray-color;
+				}
+			}
+		}
+	}
+
+	.entry-content {
+		padding-right: $padding-small;
+		padding-left: $padding-small;
+
+		@include respond-to("small-up") {
+			padding-right: $padding-medium;
+			padding-left: $padding-medium;
+		}
+		@include respond-to("medium-up") {
+			padding-right: $padding-large;
+			padding-left: $padding-large;
+		}
+
+		.more-link {
+			display: block;
+			max-width: 21rem;
+			margin: 5rem auto 0;
+			padding: 1rem 1.5rem;
+			text-align: center;
+			letter-spacing: 0.2rem;
+			text-transform: uppercase;
+			color: $dark-color;
+			background-color: $bg-color;
+			font-family: $heading-font-family;
+			font-size: 1.2rem;
+
+			&:hover {
+				background-color: $light-gray-color;
+			}
+		}
+	}
+
+	.entry-footer {
+		display: flex;
+		padding: 4rem 3.5rem;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		color: lighten($gray-color, 10%);
+		font-family: $heading-font-family;
+		font-size: 1.2rem;
+
+		@include respond-to("small-up") {
+			padding-right: 7rem;
+			padding-left: 7rem;
+		}
+		@include respond-to("medium-up") {
+			padding-right: 14rem;
+			padding-left: 14rem;
+		}
+
+		a {
+			color: lighten($dark-gray-color, 10%);
+
+			&:hover {
+				color: darken($dark-gray-color, 10%);
+			}
+		}
+
+		.cat-links {
+			margin-right: 1rem;
+		}
+
+		.edit-link {
+			margin-left: auto;
+			color: $control-color-danger;
+		}
+	}
+}
+
+.hentry {
+	&.format-image {
+		a {
+			img {
+				transition: opacity ease-in-out .15s;
+			}
+
+			&:hover {
+				img {
+					opacity: 0.7;
+				}
+			}
+		}
+
+		.entry-content {
+			padding: 0;
+		}
+	}
+}
+
+.hentry {
+	&.format-quote {
+		padding-bottom: 0;
+
+		.entry-content {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			background-color: $dark-gray-color;
+
+			@include respond-to("small-up") {
+				height: 60rem;
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+
+			blockquote {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				padding: 0;
+				border: 0;
+				justify-content: center;
+
+				p {
+					color: #fff;
+					font-size: 2rem;
+
+					@include respond-to("small-up") {
+						font-size: 3rem;
+					}
+				}
+
+				footer {
+					cite {
+						font-style: normal;
+					}
+				}
+			}
+		}
+	}
+
+	&.format-link {
+		padding-bottom: 0;
+
+		.entry-content {
+			display: flex;
+			height: 30rem;
+			background-color: $dark-gray-color;
+			align-items: center;
+			justify-content: center;
+
+			@include respond-to("small-up") {
+				height: 60rem;
+			}
+
+			p {
+				&:first-of-type {
+					margin-bottom: 0;
+				}
+			}
+
+			a {
+				letter-spacing: 0.2rem;
+				text-transform: uppercase;
+				color: #fff;
+				font-family: $heading-font-family;
+				font-size: 2rem;
+
+				@include respond-to("small-up") {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
+
+.hentry {
+	&.format-image,
+	&.format-video {
+		padding-bottom: 0;
+	}
+}
+
+.single .hentry {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}

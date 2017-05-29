@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+ * - Footer Styling
+ */
+
+.content-info {
+	margin-top: 5rem;
+	padding: 4rem;
+
+	.credit {
+		text-align: center;
+		color: $dark-gray-color;
+
+		a {
+			color: $gray-color;
+			border-bottom: 1px dotted $light-gray-color;
+
+			&:hover {
+				border-color: transparent;
+			}
+		}
+	}
+}

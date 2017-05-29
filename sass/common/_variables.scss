@@ -1,0 +1,68 @@
+// Core variables
+
+// Global
+$html-font-size: 							10px;
+$html-line-height: 						1.75;
+$body-bg: 										#f0f0f0;
+$body-font-color: 						#404040;
+$body-font-size: 							1.4rem;
+
+// Fonts
+$fallback-font-family: 				-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font-family: 						'Karla', $fallback-font-family;
+$heading-font-family:         'Roboto Condensed', $fallback-font-family;
+
+// Sizes
+$container-max-width:         98rem;
+$layout-gutter: 							2rem;
+$control-min-width: 					18rem;
+$border-radius: 							.2rem;
+
+// Core colors
+$primary-color: 							#5764c6;
+$dark-primary-color: 					darken($primary-color, 5%);
+$light-primary-color: 				lighten($primary-color, 10%);
+$dark-color: 									#151515;
+$dark-gray-color: 						#666666;
+$gray-color: 									#999999;
+$light-gray-color: 						#dddddd;
+$light-color: 								#ffffff;
+$link-color: 									$primary-color;
+$dark-link-color: 						darken($link-color, 10%);
+$border-color: 								#efefef;
+$bg-color: 										#f0f0f0;
+$dark-bg-color: 							darken($bg-color, 5%);
+$light-bg-color: 							#ffffff;
+
+// Control colors
+$control-color-success: 			#32b643;
+$control-color-warning: 			#ffb700;
+$control-color-danger: 				#e85600;
+
+$state-success-text:          #3c763d;
+$state-success-bg:            #dff0d8;
+
+$state-info-text:             #31708f;
+$state-info-bg:               #d9edf7;
+
+$state-warning-text:          #8a6d3b;
+$state-warning-bg:            #fcf8e3;
+
+$state-danger-text:           #a94442;
+$state-danger-bg:             #f2dede;
+
+// Meta colors
+$code-color: 									#e06870;
+$highlight-color: 						#ffe9b3;
+
+// Responsive breakpoints
+$tiny: 												543px;
+$small:												767px;
+$medium: 											991px;
+$large: 											1199px;
+$extra-large: 								1439px;
+
+// Paddings
+$padding-small:								3.5rem;
+$padding-medium:							$padding-small*2;
+$padding-large:								$padding-medium*2;

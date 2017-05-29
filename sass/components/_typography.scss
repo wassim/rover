@@ -1,0 +1,146 @@
+/*------------------------------------------------------------------------------
+ * - Typography
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+	margin-bottom: 3%;
+	font-family: $heading-font-family;
+  font-weight: bold;
+  line-height: 1.2;
+	color: $dark-color;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 0 0 3rem;
+}
+
+a,
+ins,
+u {
+  text-decoration-skip: ink edges;
+}
+
+blockquote {
+  border-left: .4rem solid $border-color;
+  margin: 4rem 0;
+  padding: 1rem 0 1rem 2rem;
+	font-family: $heading-font-family;
+	font-size: 1.6rem;
+	color: $dark-gray-color;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  cite {
+    color: $gray-color;
+    font-style: normal;
+  }
+}
+
+ul,
+ol {
+  margin: 3rem 0 3rem 3rem;
+  padding: 0;
+
+  ul,
+  ol {
+    margin: 1.5rem 0 1.5rem 2.5rem;
+  }
+
+  li {
+    margin-top: 1rem;
+  }
+}
+
+ul {
+  list-style: square;
+
+  ul {
+    list-style: circle;
+  }
+}
+
+ol {
+  list-style: decimal;
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+}
+
+dl {
+  dt {
+    font-weight: bold;
+  }
+  dd {
+    margin: .5rem 0 1.5rem 0;
+  }
+}
+
+mark {
+  background: $highlight-color;
+  //.label-base();
+}
+
+kbd {
+  background: $dark-color;
+  color: $light-color;
+  //.label-base();
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace;
+}
+
+abbr[title] {
+  border-bottom: 0.1rem dotted;
+  cursor: help;
+  text-decoration: none;
+}
+
+hr {
+  height: 0.1rem;
+  margin: 3rem 0;
+  border: 0;
+  background-color: $border-color;
+}

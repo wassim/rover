@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------------------
+ * - Helpers
+ */
+
+/* Alerts */
+.alert {
+	padding: 1rem 1.5rem;
+}
+
+.alert-danger {
+	color: $state-danger-text;
+	background-color: $state-danger-bg;
+}
+
+.alert-warning {
+	color: $state-warning-text;
+	background-color: $state-warning-bg;
+}
+
+/* Invisible for all */
+.is-hidden,
+[hidden] {
+  display: none;
+}
+
+/* Hidden but not for an assistive technology like a screen reader */
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* Unstyled lists */
+ul,
+ol {
+  &.is-unstyled,
+  &.unstyled {
+		margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+}

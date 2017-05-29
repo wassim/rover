@@ -1,0 +1,42 @@
+/*
+Theme Name:         Rover
+Theme URI:          https://wassim.is/rover/
+Description:  			Free Minimal Photoblogging WordPress Theme.
+Version: 						1.0.0
+Author:            	Wassim Bourguiba
+Author URI: 				https://wassim.is/
+Text Domain: 				rover
+
+License: 						GNU General Public License v2 or later
+License URI: 				https://opensource.org/licenses/GPL-2.0
+
+Tags:								one-column, custom-menu, post-formats, theme-options, translation-ready, photography
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,500,700|Roboto+Condensed:400,700');
+
+@import "components/normalize";
+
+@import "common/variables";
+@import "common/mixins";
+@import "common/base";
+
+@import "components/accessibility";
+@import "components/alignments";
+@import "components/buttons";
+@import "components/codes";
+@import "components/forms";
+@import "components/grid";
+@import "components/helpers";
+@import "components/media";
+@import "components/navigation";
+@import "components/navs";
+@import "components/tables";
+@import "components/typography";
+@import "components/wp-classes";
+
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/pages";
+@import "layouts/posts";
+@import "layouts/comments";

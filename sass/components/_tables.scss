@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------------------
+ * - Tables
+ */
+
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  text-align: left;
+  vertical-align: top;
+	border: 0.1rem solid $light-gray-color;
+  border-collapse: collapse;
+	font-size: 1.2rem;
+
+	.even {
+		background-color: $bg-color;
+	}
+
+  td,
+	th {
+    padding: 1rem;
+		cursor: default;
+		vertical-align: top;
+    border-bottom: .1rem solid $light-gray-color;
+  }
+}

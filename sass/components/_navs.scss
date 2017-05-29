@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------------
+ * - Navigations
+ */
+
+.nav-links {
+  display: flex;
+	width: 100%;
+
+  .nav-item,
+	.nav-next,
+	.nav-previous {
+    a {
+      text-decoration: none;
+			letter-spacing: 0.2rem;
+			text-transform: uppercase;
+      color: $dark-color;
+			font-family: $heading-font-family;
+			font-size: 1.2rem;
+			font-weight: bold;
+
+      &:focus,
+      &:hover {
+        color: $gray-color;;
+      }
+    }
+    &.active {
+      & > a {
+        color: $dark-gray-color;
+        font-weight: bold;
+
+        &:focus,
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+
+	.nav-next {
+		margin-left: auto;
+	}
+
+  & .nav {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+
+    a {
+      color: $gray-color;
+    }
+  }
+}
+
+.single {
+	.nav-links {
+		padding: 2.5rem $padding-small;
+		background: $light-bg-color;
+
+		@include respond-to("small-up") {
+			padding-right: $padding-medium;
+			padding-left: $padding-medium;
+		}
+		@include respond-to("medium-up") {
+			padding-right: $padding-large;
+			padding-left: $padding-large;
+		}
+	}
+}

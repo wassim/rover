@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------------------
+ * - Base Styling
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $html-font-size;
+  line-height: $html-line-height;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  overflow-x: hidden;
+  color: $body-font-color;
+  background-color: $body-bg;
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+	transition: all ease-in-out .1s;
+  text-decoration: none;
+  color: $link-color;
+
+  &:focus,
+  &:hover,
+  &:active,
+  &.active {
+    color: $dark-link-color;
+  }
+}
+
+// Focus state
+:focus {
+  outline: 0;
+  @include control-shadow();
+}
+
+// Disabled state
+.disabled {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}

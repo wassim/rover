@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------
+ * - Accessibility
+ */
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	position: absolute !important;
+	overflow: hidden !important;
+	clip: rect(1px, 1px, 1px, 1px) !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	border: 0 !important;
+
+	&:focus {
+		z-index: 100000; /* Above WP toolbar */
+		top: 0.5rem;
+		left: 0.5rem;
+		display: block;
+		clip: auto !important;
+		width: auto;
+		height: auto;
+		padding: 1.5rem 2.5rem;
+		text-decoration: none;
+		color: $light-primary-color;
+		background-color: $bg-color;
+		box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.6);
+		font-size: 1.2rem;
+		font-weight: bold;
+		line-height: normal;
+	}
+}
+
+/* Do not show the outline on the skip link target */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
